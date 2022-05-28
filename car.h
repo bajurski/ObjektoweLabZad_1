@@ -14,11 +14,17 @@ class car {
     short int numOfDoors{};
     double engineVol{};
     double averageBurn{};
+
+    double calcFuelBurn(double distance);
 public:
     //Default constructor:
     car();
     //Constructor with parameters:
     car(std::string manufac, std::string mod, short int numDoo, double engVol, double aveBurn);
+    //Public methods:
+    double calcTripCost(double tripDistance, double fuelPrice);
+    void printInfo();
+    void printNumberOfCars();
     //setters:
     void setManufacturer(std::string manu);
     void setModel(std::string mod);
@@ -31,6 +37,7 @@ public:
     short  getNumOfDoors();
     double getEngVol();
     double getAverBurn();
+    double getFuelBurnOnTrip(double distance);
 
 
 };
