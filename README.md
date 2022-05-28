@@ -1,4 +1,4 @@
-# ObjektoweLabZad_1
+ObjektoweLabZad_1
 Zadanie 1 z programowania objektowego.
 1. Proszę o utworzenie klasy „Samochod”.
 
