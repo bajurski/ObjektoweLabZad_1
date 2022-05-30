@@ -13,20 +13,26 @@
 class garage {
     std::string address;
     short capacity;
-    short numberOfCars{0};
+    short numberOfCarsParked{0};
     //std::vector<car> cars;
-    car* cars[];
+    car *cars;
 public:
     //Constructors:
     garage();
     garage(std::string addr,short capa);
+    //Destructor:
+    ~garage();
     //Public methods:
-    void insertCar(car carToInsert);
+    void insertCar(car &carToInsert);
     car removeCar();
     void printInfo();
     //Setters:
     void setAddress(std::string addr);
     void setCapacity(short capac);
+    //Getters:
+    std::string getAddress();
+    short getCapacity();
+    short getNumberOfCars();
 
 };
 
