@@ -16,7 +16,6 @@ garage::garage() : address ("Unknown"), capacity (0)
 //Constructor taking parameters into initialization list.
 garage::garage(std::string addr, short capa) :  address(addr), capacity(capa)
 {
-    //car cars[capacity];
       cars = new car[capacity];
 }
 //Destructor:
@@ -39,10 +38,9 @@ void garage::insertCar(car &carToInsert)
 }
 car garage::removeCar()
 {
-    car *removedCar;
+    car *removedCar= new car();
     if(numberOfCarsParked == 0) {
         cout<<"The garage is empty."<<endl;
-        exit(0);
     } else {
         removedCar = &cars[numberOfCarsParked-1];
        cars[numberOfCarsParked-1]={};

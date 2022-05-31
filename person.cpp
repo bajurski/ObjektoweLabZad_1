@@ -20,27 +20,47 @@ using namespace std;
 //Public methods:
     void person::addCarToPerson(string regPlat)
     {
-        /*car insertedCar;
-        regPlat = insertedCar.getRegPlate();*/
         if(numberOfCarsOwed<3){
             carRegPlates[numberOfCarsOwed]=regPlat;
             numberOfCarsOwed++;
-            //cout<<"Numer : "<<carRegPlates[numberOfCarsOwed-1]<<endl;
         } else {
-            cout<<firstName<<" owes already 3 cars."<<endl;
+            cout<<"Procedure to add a car to the list reports: -->"<<firstName<< " owes already max number of 3 cars."<<endl;
         }
 
     }
     void person::removeCarfromPerson(string regPlat)
     {
+        bool wasRemoved = false;
         string plateToremove = regPlat;
         for (int i = 0; i < 3; ++i) {
           if(carRegPlates[i] == plateToremove)  {
               carRegPlates[i]={};
+              wasRemoved = true;
+
           }
         }
+        if(wasRemoved)  {
+            numberOfCarsOwed--;
+            cout<<"Procedure to remowe a car from the list reports : --> The car with the registration :"<< plateToremove <<" was removed from the data record of "<< firstName<<endl;
+        } else {
+            cout<<"Procedure to remowe a car from the list reports : --> The car with the registration :"<< plateToremove <<" wasn't in the data record of "<< firstName<<endl;
+        }
     }
-    void person::printInfo()
-    {
-
+    void person::printInfo() {
+        bool owesSomeCar = false;
+        cout << "--------------------------------------------------------------------" << endl;
+        cout << "Procedure printInfo reports about " << firstName << " : --> " << endl;
+        cout << firstName << " " << familyName << " lives in " << homeAddress << endl;
+        cout << "Number of cars owed by " << firstName << " is : " << numberOfCarsOwed << endl;
+        cout << "Registration numbers of cars owed by " << firstName << ":" << endl;
+        for (int i = 0; i < 3; ++i) {
+            if (carRegPlates[i] != "") {
+                cout << carRegPlates[i] << endl;
+                owesSomeCar = true;
+            }
+        }
+        if (!owesSomeCar) {
+            cout << "No car, no plate !" << endl;
+        }
+        cout<<"-----------------------------------------------------------------------"<<endl;
     }
