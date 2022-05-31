@@ -24,30 +24,46 @@ int main()
     cout << "Fuel burn on distance :" << C2->getFuelBurnOnTrip(750);
     cout<<endl;
 //Test code for Exercise 1_2:
-   /* cout<<"============= TEST CODE FOR EXERCISE 1_2 ==================================="<<endl;
-    garage *g1 = new garage();
-    g1->setAddress("ul. Garażowa 1");
-    g1->setCapacity(1);
-    garage *g2 = new garage("ul. Garażowa 2", 2);
-    g1->insertCar(*C1);
-    g1->printInfo();
-    g1->removeCar();
-    g2->insertCar(*C2);
-    g2->insertCar(*C1);
-    g2->printInfo();
-    g2->removeCar();
-    g2->printInfo();
-    g2->removeCar();
-    g2->removeCar();*/
+    cout<<"============= TEST CODE FOR EXERCISE 1_2 ==================================="<<endl;
+    garage *G1 = new garage();
+    G1->setAddress("ul. Garażowa 1");
+    G1->setCapacity(1);
+    garage *G2 = new garage("ul. Garażowa 2", 2);
+    G1->insertCar(*C1);
+    G1->printInfo();
+    G1->removeCar();
+    G2->insertCar(*C2);
+    G2->insertCar(*C1);
+    G2->printInfo();
+    G2->removeCar();
+    G2->printInfo();
+    G2->removeCar();
+    G2->removeCar();
     cout<<endl;
 //Test code for Zadanie 1:
     cout<<"============= TEST CODE FOR Zadanie 1 ==================================="<<endl;
     person *P1 = new person("Maciej","Kowalski","ul.Słoneczna 30",0);
     person *P2 = new person("Anna", "Masztalska","ul.Wiśniowa 2",0);
     person *P3 = new person("Maciej","Nowak","ul.Wesoła 55/3",0);
+
     P1->addCarToPerson(C3->getRegPlate());
-    delete C2;
+    P1->addCarToPerson(C1->getRegPlate());
+    P1->addCarToPerson(C2->getRegPlate());
+    P1->addCarToPerson(C3->getRegPlate());
+    P2->removeCarfromPerson(C1->getRegPlate());
+    P1->printInfo();
+    P1->removeCarfromPerson(C3->getRegPlate());
+    P1->printInfo();
+    P2->printInfo();
+
+    delete G1;
+    delete G2;
     delete C1;
+    delete C2;
+    delete C3;
+    delete P1;
+    delete P2;
+    delete P3;
 
     return 0;
 }
