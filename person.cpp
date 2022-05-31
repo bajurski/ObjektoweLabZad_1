@@ -41,21 +41,26 @@ using namespace std;
         }
         if(wasRemoved)  {
             numberOfCarsOwed--;
-            cout<<"Procedure to remowe car from the list reports : --> The car with the registration :"<< plateToremove <<" was removed from the data record of "<< firstName<<endl;
+            cout<<"Procedure to remowe a car from the list reports : --> The car with the registration :"<< plateToremove <<" was removed from the data record of "<< firstName<<endl;
         } else {
-            cout<<"Procedure to remowe car from the list reports : --> The car with the registration :"<< plateToremove <<" wasn't in the data record of "<< firstName<<endl;
+            cout<<"Procedure to remowe a car from the list reports : --> The car with the registration :"<< plateToremove <<" wasn't in the data record of "<< firstName<<endl;
         }
     }
-    void person::printInfo()
-    {
-        cout<<"---------------------------------------------------"<<endl;
-        cout<<"Procedure printInfo reports about "<<firstName<<" : --> "<<endl;
-        cout<<firstName<<" "<<familyName<<" lives in "<<homeAddress<<endl;
-        cout<<"Number of cars owed by "<< firstName <<" is : "<<numberOfCarsOwed<<endl;
-        cout<<"Registration numbers of cars owed by "<<firstName<<":"<<endl;
+    void person::printInfo() {
+        bool owesSomeCar = false;
+        cout << "--------------------------------------------------------------------" << endl;
+        cout << "Procedure printInfo reports about " << firstName << " : --> " << endl;
+        cout << firstName << " " << familyName << " lives in " << homeAddress << endl;
+        cout << "Number of cars owed by " << firstName << " is : " << numberOfCarsOwed << endl;
+        cout << "Registration numbers of cars owed by " << firstName << ":" << endl;
         for (int i = 0; i < 3; ++i) {
-            if(carRegPlates[i] != "") {
-                cout<<carRegPlates[i]<<endl;
+            if (carRegPlates[i] != "") {
+                cout << carRegPlates[i] << endl;
+                owesSomeCar = true;
             }
         }
+        if (!owesSomeCar) {
+            cout << "No car, no plate !" << endl;
+        }
+        cout<<"-----------------------------------------------------------------------"<<endl;
     }

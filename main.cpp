@@ -44,7 +44,7 @@ int main()
     cout<<"============= TEST CODE FOR Zadanie 1 ==================================="<<endl;
     person *P1 = new person("Maciej","Kowalski","ul.Słoneczna 30",0);
     person *P2 = new person("Anna", "Masztalska","ul.Wiśniowa 2",0);
-    person *P3 = new person("Maciej","Nowak","ul.Wesoła 55/3",0);
+    person *P3 = new person("Wojtek","Nowak","ul.Wesoła 55/3",0);
 
     P1->addCarToPerson(C3->getRegPlate());
     P1->addCarToPerson(C1->getRegPlate());
@@ -54,6 +54,12 @@ int main()
     P1->printInfo();
     P1->removeCarfromPerson(C3->getRegPlate());
     P1->printInfo();
+    P3->addCarToPerson(C1->getRegPlate());
+    P3->addCarToPerson(C3->getRegPlate());
+    P3->printInfo();
+    P2->addCarToPerson(C2->getRegPlate());
+    P2->printInfo();
+    P2->removeCarfromPerson(C2->getRegPlate());
     P2->printInfo();
 
     delete G1;
