@@ -4,4 +4,14 @@
 1	387	1654017833498220464	CMakeFiles/ProgObjLab_Zad_1.dir/garage.cpp.o	a420a4fc9a4462f8
 3	533	1654018167018965819	CMakeFiles/ProgObjLab_Zad_1.dir/main.cpp.o	85c65f43be112365
 1	352	1654017882409671281	CMakeFiles/ProgObjLab_Zad_1.dir/car.cpp.o	fac6730568b3a355
-0	41	1654018982531706682	build.ninja	5f9da1ce952e41cb
+0	41	1654019218751592458	build.ninja	5f9da1ce952e41cb
+4	351	1654019222679882843	CMakeFiles/ProgObjLab_Zad_1.dir/car.cpp.o	fac6730568b3a355
+4	351	1654019222680607605	CMakeFiles/ProgObjLab_Zad_1.dir/person.cpp.o	5ad76ab3217c04fe
+4	360	1654019222688753448	CMakeFiles/ProgObjLab_Zad_1.dir/main.cpp.o	85c65f43be112365
+4	360	1654019222688656904	CMakeFiles/ProgObjLab_Zad_1.dir/garage.cpp.o	a420a4fc9a4462f8
+360	391	1654019222721662576	ProgObjLab_Zad_1	e0795b26935b514b
+2	651	1654027832663084108	CMakeFiles/ProgObjLab_Zad_1.dir/person.cpp.o	5ad76ab3217c04fe
+1	691	1654027832708494151	CMakeFiles/ProgObjLab_Zad_1.dir/car.cpp.o	fac6730568b3a355
+1	693	1654027832708435192	CMakeFiles/ProgObjLab_Zad_1.dir/main.cpp.o	85c65f43be112365
+1	723	1654027832732109292	CMakeFiles/ProgObjLab_Zad_1.dir/garage.cpp.o	a420a4fc9a4462f8
+723	796	1654027832812778794	ProgObjLab_Zad_1	e0795b26935b514b
