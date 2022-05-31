@@ -8,4 +8,4 @@ include_directories(.)
 add_executable(ProgObjLab_Zad_1
         car.cpp
         car.h
-        main.cpp garage.cpp garage.h)
+        main.cpp garage.cpp garage.h person.cpp person.h)

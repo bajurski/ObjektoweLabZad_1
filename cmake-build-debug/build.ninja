@@ -70,6 +70,13 @@ build CMakeFiles/ProgObjLab_Zad_1.dir/garage.cpp.o: CXX_COMPILER__ProgObjLab_Zad
   OBJECT_DIR = CMakeFiles/ProgObjLab_Zad_1.dir
   OBJECT_FILE_DIR = CMakeFiles/ProgObjLab_Zad_1.dir
 
+build CMakeFiles/ProgObjLab_Zad_1.dir/person.cpp.o: CXX_COMPILER__ProgObjLab_Zad_1_Debug /Users/arek/Programming/C++/ProgObjLab_Zad_1/person.cpp || cmake_object_order_depends_target_ProgObjLab_Zad_1
+  DEP_FILE = CMakeFiles/ProgObjLab_Zad_1.dir/person.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/arek/Programming/C++/ProgObjLab_Zad_1/.
+  OBJECT_DIR = CMakeFiles/ProgObjLab_Zad_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/ProgObjLab_Zad_1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ProgObjLab_Zad_1
@@ -78,7 +85,7 @@ build CMakeFiles/ProgObjLab_Zad_1.dir/garage.cpp.o: CXX_COMPILER__ProgObjLab_Zad
 #############################################
 # Link the executable ProgObjLab_Zad_1
 
-build ProgObjLab_Zad_1: CXX_EXECUTABLE_LINKER__ProgObjLab_Zad_1_Debug CMakeFiles/ProgObjLab_Zad_1.dir/car.cpp.o CMakeFiles/ProgObjLab_Zad_1.dir/main.cpp.o CMakeFiles/ProgObjLab_Zad_1.dir/garage.cpp.o
+build ProgObjLab_Zad_1: CXX_EXECUTABLE_LINKER__ProgObjLab_Zad_1_Debug CMakeFiles/ProgObjLab_Zad_1.dir/car.cpp.o CMakeFiles/ProgObjLab_Zad_1.dir/main.cpp.o CMakeFiles/ProgObjLab_Zad_1.dir/garage.cpp.o CMakeFiles/ProgObjLab_Zad_1.dir/person.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/ProgObjLab_Zad_1.dir
   POST_BUILD = :

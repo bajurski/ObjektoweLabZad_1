@@ -15,8 +15,8 @@ car::car() : manufacturer("unknown"), model("unknown"), numOfDoors(0), engineVol
 }
 
 //Constructor taking parameters into initialization list.
-car::car(std::string manufac, std::string mod, short numDoo, double engVol, double aveBurn) :manufacturer(manufac),
-    model(mod), numOfDoors(numDoo), engineVol(engVol), averageBurn(aveBurn)
+car::car(std::string manufac, std::string mod, short numDoo, double engVol, double aveBurn,std::string regPl) :manufacturer(manufac),
+    model(mod), numOfDoors(numDoo), engineVol(engVol), averageBurn(aveBurn), regPlate(regPl)
 {
     numberOfCars++;
 }
@@ -90,6 +90,10 @@ double car::getAverBurn()
 }
 double car::getFuelBurnOnTrip(double distance) {
     return calcFuelBurn(distance);
+}
+std::string car::getRegPlate()
+{
+    return regPlate;
 }
 
 
