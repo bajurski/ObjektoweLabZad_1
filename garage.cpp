@@ -29,11 +29,10 @@ void garage::insertCar(car &carToInsert)
     carToIns = &carToInsert;
     if(numberOfCarsParked >= capacity) {
         cout<<"The garage is full. Unable to insert the car"<<endl;
+        cout<<"--------------------------------------------"<<endl;
     } else {
         numberOfCarsParked++;
         cars[numberOfCarsParked-1] = {*carToIns};
-        //cout<<cars[numberOfCarsParked-1]->getModel()<<endl;
-
     }
 }
 car garage::removeCar()

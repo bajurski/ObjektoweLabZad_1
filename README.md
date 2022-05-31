@@ -1,5 +1,9 @@
-ObjektoweLabZad_1
-Zadanie 1 z programowania objektowego.
+All tasks preformed in C++ in CLion IDE with CMake build system. 
+main.cpp contains tests for all parts of the programm.
+
+
+
+Ćwiczenie_1_1 z programowania objektowego.
 1. Proszę o utworzenie klasy „Samochod”.
 
 2. Proszę o utworzenie prywatnych pól klasy „Samochod” o nazwie: „marka”, „model”, „iloscDrzwi”, „pojemnoscSilnika”, „srednieSpalanie”. 
@@ -37,7 +41,7 @@ Zadanie 1 z programowania objektowego.
 	
 11. Proszę o przetestowanie poprawności wykonania zadania za pomocą kodu testowego
 
-Ćwiczenie_1_2
+Ćwiczenie_1_2 z programowania objektowego.
 1. Aplikacja z Ćwiczenia 1 ma zostać uzupełniona o klasę "Garaz"
 2. Proszę o utworzenie prywatnych pól klasy „Garaz” o nazwie: „adres”, „pojemnosc”, „liczbaSamochodow”, „samochody”. 
    	Pole „samochody” powinno posiadać typ tablicowy, przechowujący obiekty klasy „Samochod”:
@@ -91,7 +95,7 @@ Zadanie 1 z programowania objektowego.
 	g2.WyprowadzSamochod();
 	Console.ReadKey();
   
-  ZADANIE_1
+  ZADANIE_1 z programowania objektowego.
   Do wykonania tego zadania konieczne jest wykonanie Ćwiczenie_1 i Ćwiczenie_1_2
 2. Dodaj pole "numerRejestracyjny" do klasy "Samochod". Dobierz odpowiedni typ danych.
 3. Dodaj parametr numerRejestracyjny_ (string) do konstruktora niedomyślnego klasy

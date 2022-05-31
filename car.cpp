@@ -39,7 +39,7 @@ void car::printInfo() {
     cout<<"Number of doors :  "<< numOfDoors << endl;
     cout<<"Engine Vol. :      "<< engineVol <<endl;
     cout<<"Average fuel burn  "<< averageBurn <<endl;
-    cout<<"-----------------------------------------"<< endl;
+    cout<<"--------------------------------------------"<< endl;
 }
 void car::printNumberOfCars() {
     cout<<"Number of cars created is : " << numberOfCars << endl;

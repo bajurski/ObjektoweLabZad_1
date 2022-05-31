@@ -26,7 +26,7 @@ public:
     //Public methods:
     double calcTripCost(double tripDistance, double fuelPrice);
     void printInfo();
-    void printNumberOfCars();
+    static void printNumberOfCars();
     //setters:
     void setManufacturer(std::string manu);
     void setModel(std::string mod);
