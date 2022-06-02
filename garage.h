@@ -7,14 +7,12 @@
 
 
 #include <string>
-#include <vector>
 #include "car.h"
 
 class garage {
     std::string address;
     short capacity;
     short numberOfCarsParked{0};
-    //std::vector<car> cars;
     car *cars;
 public:
     //Constructors:
